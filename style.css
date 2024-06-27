@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Container {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    width: 100vw;
+    height: 900px;
+   
+    overflow: hidden; 
+}
+
+.Header-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+#left{
+    margin-top: 10px;
+    display: inline-block
+}
+#right{
+    
+}
+.Inside-Header {
+    width: 60vw;
+    height: 890px;
+   
+}
+.nav-bar {
+    
+    width: 100vw;
+   margin-top: 3px;
+    overflow-x: hidden;
+}
+ul{
+    color: white;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.H-A {
+    margin-left: 3rem;
+}
+ul li {
+    float: left;
+    width:140px;
+    height:40px;
+   
+   
+    
+   
+    position: relative;
+}
+.drop-down1, .drop-down2{
+    background-color: white;
+}
+#justice {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#Home {
+    margin-left: 6rem;
+   
+    
+}
+a:hover {
+    color:black;
+}
+#Practice {
+    margin-left: 3rem;
+}
+a {
+    text-decoration: none;
+    color:gray;
+    display: block;
+}
+
+ul ul li {
+    display: none;
+
+}
+ul li:hover ul li {
+    display: block;
+    background-color: white;
+}
+.drop-down1{
+    margin-top: 1rem;
+}
+.drop-down2{
+  margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:0;
+    left:100%;
+}
+.drop-down2{
+    display: none;
+}
+
+ul ul li:hover .drop-down2{
+display: block;
+}
+
+
+.Content {
+    margin-top: 20rem;
+    margin-left: 10rem;
+    animation: div-2 2s ease-in forwards;
+}
+.div-2 {
+    padding-right:0.5rem;
+    padding-top: 1rem;
+    padding-left: 10rem;
+    justify-self: right;
+   
+  
+}
+@keyframes div-2 {
+    from{
+     
+    margin-left: 30rem;
+    }
+    to{
+       
+        margin-left: 10rem;
+    }
+}
+.Header-content {
+    display: grid;
+    grid-template-columns: 10% 50%;
+    grid-template-rows: auto;
+
+    
+}
+
+.Text-content {
+    width: 500px;
+}
+
+.A {
+    width: 300px;
+    line-break: 2rem;
+}
+
+.A h1 {
+    font-size: 3rem;
+}
+
+.A strong {
+    font-weight: 800; 
+    color: #b49c73;
+}
+
+.B {
+    margin-top: 1rem;
+}
+
+.B a {
+    color: #b49c73;
+}
+
+.B p {
+    font-size: 24px;
+    color: rgb(130, 125, 125);
+}
+
+.button {
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    color: white;
+    background-color: #b49c73;
+    transition: background-color 0.3s ease; 
+}
+
+.button:active {
+    background-color: blue;
+    outline: 1px solid rgb(183, 213, 222); 
+}
+
+/* below head */
+
+.Below-head{
+    width:100vw;
+    height:700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgba(66, 62, 62, 0.962);
+}
+.Container1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,500px));
+   
+    width:80vw;
+    height:450px;
+    justify-content: center;
+    gap:2rem;
+}
+.Left-div{
+    animation: Left-d 2s ease-in forwards;
+}
+@keyframes Left-d{
+    from{
+        left:20px;
+    }
+    to{
+       left:40px
+    }
+}
+.Left-div h1{
+    font-size: 3rem;
+    color:white;
+}
+.Left-div strong  {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #b49c73;
+}
+.Left-div p {
+    font-size: 1.5rem;
+}
+.para-1,.para-2 {
+    width:400px;
+    color: rgba(219, 206, 206, 0.947);
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.Right-div {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+}
+.box{
+    display: grid;
+    grid-template-columns: 20% 70%;
+    color: white;
+}
+.B1 h3 {
+    color: #b49c73;
+}
+.B1 P{
+    color: rgba(219, 206, 206, 0.947);
+}
+.Right-div a {
+    opacity: 1; 
+    transition: opacity 1s ease;
+}
+
+.Right-div a:hover {
+    opacity: 1; 
+}
+
+.Right-div:hover a:not(:hover) {
+    opacity: 0.3; 
+}
