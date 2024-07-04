@@ -9,41 +9,67 @@
 </head>
 <body>
 <div class="CON-tainer">
-    <div class="nav-bar">
-           <div class="nav-container">
-        <a href="index.html" id="justice">Justice</a> 
-        <ul class="list">
-            <li ><a href="index.html" id="Home" class="H-A">Home</a></li>
-            <li class="has-children"><a href="practice-areas.html" id="Practice" class="H-A"  
-                >Practice Areas </a> 
-                <ul class="drop-down1">
-                    <li><a href="#">Elements</a></li>
-                    <li><a href="#">Menu One</a>
-                        <ul class="drop-down2">
-                            <li><a href="#">Sub Menu One</a></li>
-                            <li><a href="#">Sub Menu Two</a></li>
-                            <li><a href="#">Sub Menu Three</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" >Menu Two</a></li>
-                </ul>
-            </li>
-            <li><a href="#" class="H-A">Services    </a></li>
-            <li><a href="#" class="H-A">Attorneys</a></li>
-            <li><a href="#" class="H-A">About</a></li>
-            <li><a href="#" class="H-A">Contact Us</a></li>
-        </ul>
-    </div>
-    </div>
-
-      
-   
-    
         
         <div class="Header">
-        <img src="header.jpg" alt="header-img" class="Header-img">
+        <!-- <img src="header.jpg" alt="header-img" class="Header-img"> -->
 
         <div class="nav-container">
+          
+              
+            <nav>
+                 <ul class="sidebar">
+                    <li onclick=hidesidebar()><a href="#"><i class="fa-solid fa-xmark fa-2x"></i></a></li>
+                    <li><a href="index.html" id="justice">Justice</a> </li>  
+                    <li ><a href="index.html" id="Home" class="H-A">Home</a></li>
+                    <li class="has-children"><a href="practice-areas.html" id="Practice" class="H-A"  
+                        >Practice Areas </a> 
+                        <ul class="drop-down1">
+                            <!-- <li><a href="#">Elements</a></li>
+                            <li><a href="#">Menu One</a>
+                                <ul class="drop-down2">
+                                    <li><a href="#">Sub Menu One</a></li>
+                                    <li><a href="#">Sub Menu Two</a></li>
+                                    <li><a href="#">Sub Menu Three</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" >Menu Two</a></li> -->
+                        </ul>
+                    </li>
+                    <li><a href="#" class="H-A">Services    </a></li>
+                    <li><a href="#" class="H-A">Attorneys</a></li>
+                    <li><a href="#" class="H-A">About</a></li>
+                    <li><a href="#" class="H-A">Contact Us</a></li>
+                
+                  </ul>
+             <ul>
+                <li><a href="index.html" id="justice">Justice</a> </li> 
+                 <li  class="hideonmobile" ><a href="index.html" id="Home" class="H-A">Home</a></li>
+                 <li class="hideonmobile" class="has-children"><a href="practice-areas.html" id="Practice" class="H-A"  
+                     >Practice Areas </a> 
+                     <ul class="drop-down1">
+                         <!-- <li><a href="#">Elements</a></li>
+                         <li><a href="#">Menu One</a>
+                             <ul class="drop-down2">
+                                 <li><a href="#">Sub Menu One</a></li>
+                                 <li><a href="#">Sub Menu Two</a></li>
+                                 <li><a href="#">Sub Menu Three</a></li>
+                             </ul>
+                         </li>
+                         <li><a href="#" >Menu Two</a></li> -->
+                     </ul>
+                 </li>
+                 <li class="hideonmobile"><a href="#" class="H-A">Services    </a></li>
+                 <li class="hideonmobile"><a href="#" class="H-A">Attorneys</a></li>
+                 <li class="hideonmobile"><a href="#" class="H-A">About</a></li>
+                 <li class="hideonmobile"><a href="#" class="H-A">Contact Us</a></li>
+                 <li  class="menu-button"  onclick="showSidebar()">
+                    <a href="#"><i class="fa-solid fa-bars fa-1x"></i></a>
+                </li>
+                
+             </ul>
+            </nav>
+        
+        
 <div class="row align-items-center">
     <div class="Content ">
      
@@ -202,7 +228,7 @@
                 </div>
                <div class="box-content">
                         <div class="f-img">
-                            <img src="https://neweralive.na/storage/images/2023/may/lloyd-sikeba.jpg" alt="">
+                            <img src="pic2.jpeg" alt="">
                         </div>
                         <div class="f-content">
                             <h3 id="f-1">Carl Anderson</h3>
@@ -218,7 +244,7 @@
                     </div>
                    <div class="box-content">
                             <div class="f-img">
-                                <img src="https://neweralive.na/storage/images/2023/may/lloyd-sikeba.jpg" alt="">
+                                <img src="pic3.jpeg" alt="">
                             </div>
                             <div class="f-content">
                                 <h3 id="f-1">Carl Anderson</h3>
@@ -234,7 +260,7 @@
                     </div>
                    <div class="box-content">
                             <div class="f-img">
-                                <img src="https://neweralive.na/storage/images/2023/may/lloyd-sikeba.jpg" alt="">
+                                <img src="pic4.jpeg" alt="">
                             </div>
                             <div class="f-content">
                                 <h3 id="f-1">Carl Anderson</h3>
@@ -338,7 +364,7 @@
 
 <div class="Image-section">
     <div class="I-container">
-    <img src="header.jpg" alt="">
+    <img src="header-img.jpeg" alt="">
     
     <div class="I-content">
        
@@ -423,5 +449,16 @@
 </div>
 <!-- container -->
 </div></div>
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'flex';
+    }
+    function hidesidebar(){
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'none';
+    }
+</script>
+
 </body>
 </html>
